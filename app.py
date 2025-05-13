@@ -84,7 +84,7 @@ try:
     sensor_thread.start()
 
     while True:
-        
+        ...
         # button logic
 
         # sender logic
