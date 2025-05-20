@@ -178,7 +178,7 @@ try:
                 client.publish(SELF_TOPIC_H, str(sensor_humidity))
                 client.publish(SELF_TOPIC_T, str(sensor_temp_c))
         
-        if now - lastsend > 30:
+        if now - lastsend > 30 and sender_state:
             lastsend = now
             print("envoi automatique")
             client.publish(SELF_TOPIC_H, str(sensor_humidity))
